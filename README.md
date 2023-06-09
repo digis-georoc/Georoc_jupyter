@@ -42,7 +42,7 @@ Each of these parts includes detailed tutorials and explanations to help users u
 
 [**Download our Notebook**](https://github.com/tmwProjects/Georoc_jupyter/blob/main/DIGIS_GeoRoc.ipynb)
 
-![Download_raw_Button](images/meine_grafik.png)
+![Download_raw_Button](https://github.com/tmwProjects/Georoc_jupyter/blob/main/download_raw.png)
 
 ***
 
