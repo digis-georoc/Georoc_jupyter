@@ -15,7 +15,7 @@ api_key_widget = widgets.Text(
 )
 
 # Anzeige des Widgets
-display(api_key_widget)
+display(api_key_widget);
 
 
 # Define API-Key, Base-URL and headers
