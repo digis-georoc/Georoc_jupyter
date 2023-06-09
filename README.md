@@ -44,8 +44,7 @@ Launch our notebook on Binder by clicking the button : [![Binder](https://mybind
 
 <br/>
 
-###### Hint: 
-To utilize our notebooks, please note that it is necessary to have an API key from GEOROC. If you do not have an API key, we recommend visiting the official homepage to request one.
+###### Hint: To utilize our notebooks, please note that it is necessary to have an API key from GEOROC. If you do not have an API key, we recommend visiting the official homepage to request one.
 
 
 ***
