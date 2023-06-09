@@ -38,14 +38,17 @@ Each of these parts includes detailed tutorials and explanations to help users u
 
 ### Usage:
 
-Launch our Notebooks: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/tmwProjects/Georoc_jupyter/HEAD?labpath=DIGIS_GeoRoc.ipynb)
+**Launch our Notebook**: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/tmwProjects/Georoc_jupyter/HEAD?labpath=DIGIS_GeoRoc.ipynb)
+
+[**Download our Notebook**](https://github.com/tmwProjects/Georoc_jupyter/blob/main/DIGIS_GeoRoc.ipynb)
+
+![Download_raw_Button](images/meine_grafik.png)
 
 ***
 
 ### Social:
 
 [Visit our Website](https://georoc.mpch-mainz.gwdg.de/georoc/)
-
 ![Twitter URL](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Ftwitter.com%2FDIGISgeo)
 
 ***
