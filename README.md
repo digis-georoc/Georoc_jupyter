@@ -1,4 +1,4 @@
-<img src="https://pbs.twimg.com/media/E0m6c9FX0AIX0p1.png" style="height:300px" align="left"/> <br><br>
+<img src="https://pbs.twimg.com/media/E0m6c9FX0AIX0p1.png" style="height:350px" align="center"/> <br><br>
 
 <br/>
 <br/>
@@ -9,7 +9,10 @@
 <br/>
 <br/>
 <br/>
-
+<br/>
+<br/>
+<br/>
+<br/>
 
 
 ***
