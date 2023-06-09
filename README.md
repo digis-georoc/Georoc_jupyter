@@ -1,6 +1,8 @@
 <img src="https://pbs.twimg.com/media/E0m6c9FX0AIX0p1.png" style="height:350px" align="center"/> <br><br>
 
 
+![GitHub Repo stars](https://img.shields.io/github/stars/tmwProjects/Georoc_jupyter?style=social) ![GitHub followers](https://img.shields.io/github/followers/tmwProjects?style=social) ![GitHub commit activity](https://img.shields.io/github/commit-activity/w/tmwProjects/Georoc_jupyter) 
+
 ***
 
 The GEOROC Database (Geochemistry of Rocks of the Oceans and Continents) is a comprehensive collection of published analyses of igneous and metamorphic rocks and minerals. It contains major and trace element concentrations, radiogenic and nonradiogenic isotope ratios as well as analytical ages for whole rocks, glasses, minerals and inclusions. Metadata include geospatial and other sample information, analytical details and references.
@@ -18,7 +20,7 @@ For feedback, questions and further information contact [Digis-Info](mailto:digi
 
 ***
 
-# Jupyter-Notebooks
+# Jupyter-Notebook
 
 The Jupyter Notebook created are specifically designed to illustrate the features of GEOROC 2.0. They focus on data access via the API, followed by suggested workflows for data formatting, cleansing, resampling, and presentation. They were first used to test the API and ensure its functionality.
 
@@ -36,7 +38,7 @@ Each of these parts includes detailed tutorials and explanations to help users u
 
 ### Usage:
 
-Launch our Notebooks: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gl/georoc%2FJupyter/HEAD?labpath=DIGIS_GeoRoc.ipynb)
+Launch our Notebooks: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/tmwProjects/Georoc_jupyter/HEAD?labpath=DIGIS_GeoRoc.ipynb)
 
 ***
 
@@ -44,8 +46,7 @@ Launch our Notebooks: [![Binder](https://mybinder.org/badge_logo.svg)](https://m
 
 [Visit our Website](https://georoc.mpch-mainz.gwdg.de/georoc/)
 
-
-![Twitter Follow](https://img.shields.io/twitter/follow/DIGISgeo?style=social)
+![Twitter URL](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Ftwitter.com%2FDIGISgeo)
 
 ***
 
