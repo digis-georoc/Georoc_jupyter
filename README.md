@@ -9,9 +9,7 @@ The GEOROC Database (Geochemistry of Rocks of the Oceans and Continents) is a co
 
 The GEOROC Database was established at the Max Planck Institute for Chemistry in Mainz (Germany). In 2021, the database was moved to Göttingen University, where it continues to be curated as part of the DIGIS project of the Department of Geochemistry and Isotope Geology at the Geoscience Centre (GZG) and the University and State Library (SUB). Development for GEOROC 2.0 includes a new data model for greater interoperability, options to contribute data, and improved access to the database.
 
-As part of the DIGIS project, a new API interface has been created for the GEOROC database, allowing easy access to its contents
-with simple programming skills. Users can now query the database and retrieve data using the new API, making it more accessible 
-and useful for researchers and other interested parties. This notebook demonstrates the basic capabilities of GEOROC data access via the new DIGIS API. 
+As part of the DIGIS project, a new API interface has been created for the GEOROC database, allowing easy access to its contents with simple programming skills. Users can now query the database and retrieve data using the new API, making it more accessible and useful for researchers and other interested parties. This notebook demonstrates the basic capabilities of GEOROC data access via the new DIGIS API. 
 
 For feedback, questions and further information contact [Digis-Info](mailto:digis-info@uni-goettingen.de) directly.
 
@@ -38,17 +36,24 @@ Each of these parts includes detailed tutorials and explanations to help users u
 
 ### Usage:
 
-**Launch our Notebook**: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/tmwProjects/Georoc_jupyter/HEAD?labpath=DIGIS_GeoRoc.ipynb)
+Launch our notebook on Binder by clicking the button : [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/tmwProjects/Georoc_jupyter/HEAD?labpath=DIGIS_GeoRoc.ipynb)
 
-[**Download our Notebook**](https://github.com/tmwProjects/Georoc_jupyter/blob/main/DIGIS_GeoRoc.ipynb)
+**or**
 
-![Download_raw_Button](https://github.com/tmwProjects/Georoc_jupyter/blob/main/download_raw.png)
+[Download our Notebook](https://github.com/tmwProjects/Georoc_jupyter/blob/main/DIGIS_GeoRoc.ipynb) and use it on your local machine or in your browser. If you are not familiar with Jupyter, you can visit the [official website](https://jupyter.org/) for more information.
+
+<br/>
+
+###### Hint: 
+To utilize our notebooks, please note that it is necessary to have an API key from GEOROC. If you do not have an API key, we recommend visiting the official homepage to request one.
+
 
 ***
 
 ### Social:
 
 [Visit our Website](https://georoc.mpch-mainz.gwdg.de/georoc/)
+
 ![Twitter URL](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Ftwitter.com%2FDIGISgeo)
 
 ***
