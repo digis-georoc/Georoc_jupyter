@@ -36,11 +36,7 @@ Each of these parts includes detailed tutorials and explanations to help users u
 
 ### Usage:
 
-Launch our notebook on Binder by clicking the button : [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/tmwProjects/Georoc_jupyter/HEAD?labpath=DIGIS_GeoRoc.ipynb)
-
-**or**
-
-[Download our Notebook](https://github.com/tmwProjects/Georoc_jupyter/blob/main/DIGIS_GeoRoc.ipynb) and use it on your local machine or in your browser. If you are not familiar with Jupyter, you can visit the [official website](https://jupyter.org/) for more information.
+Launch our notebook on Binder by clicking the button : [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/tmwProjects/Georoc_jupyter/HEAD?labpath=DIGIS_GeoRoc.ipynb) **OR** [Download our Notebook](https://github.com/tmwProjects/Georoc_jupyter/blob/main/DIGIS_GeoRoc.ipynb) and use it on your local machine or in your browser. If you are not familiar with Jupyter, you can visit the [official website](https://jupyter.org/) for more information.
 
 
 ###### Hint: To utilize our notebooks, please note that it is necessary to have an API key from GEOROC. If you do not have an API key, we recommend visiting the official homepage to request one.
