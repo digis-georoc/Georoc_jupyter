@@ -156,5 +156,8 @@ keys = ['Sample_Num', 'unique_id', 'Batches', 'References', 'SampleName', 'Locat
 # Erstellen Sie eine Checkbox für jeden Schlüssel
 checkboxes = [widgets.Checkbox(value=False, description=key) for key in keys]
 
-# Erstellen Sie eine Box, um alle Checkboxen zu halten
-checkboxes_box = widgets.VBox(children=checkboxes)
+# Erstellen Sie ein Layout für die GridBox
+grid_layout = widgets.Layout(grid_template_columns="repeat(3, 300px)")  # 3 Spalten, jede 300px breit
+
+# Erstellen Sie eine GridBox, um alle Checkboxen zu halten
+grid = widgets.GridBox(children=checkboxes, layout=grid_layout)
