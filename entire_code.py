@@ -5,17 +5,33 @@ from contextlib import redirect_stdout
 import pandas as pd
 from tqdm.auto import tqdm
 from ipywidgets import widgets
+from ipywidgets import Layout
+from ipywidgets import IntProgress, Layout, HBox, Label
 
 
 # Erstellen Sie ein Text-Widget
 api_key_widget = widgets.Text(
     placeholder='Geben Sie Ihren API-Schlüssel ein',
-    description='API Schlüssel:',
-    disabled=False
+    description='API Key:',
+    disabled=False,
+    layout=Layout(width="auto")
 )
 
 # Anzeige des Widgets
 display(api_key_widget);
+
+
+# Specify the desired keys
+keys = ['Item_Name', 'Values', 'Units', 'Item_Group']
+
+# Erstellen Sie das SelectMultiple-Widget für die Schlüsselauswahl
+key_widget = widgets.SelectMultiple(
+    options=keys,
+    description='Keys:',
+)
+
+# Anzeige des Widgets
+display(key_widget);
 
 
 # Define API-Key, Base-URL and headers
@@ -80,47 +96,6 @@ def get_filtered_samples(
     return data
 
 
-# Specify the desired keys
-keys = ['Item_Name', 'Values', 'Units', 'Item_Group']
-
-
-def get_measurement_data(api_key, sampling_feature_id):
-    base_url = f"https://api-test.georoc.eu/api/v1/queries/fulldata/{sampling_feature_id}"
-    headers = {
-        "accept": "application/json",
-        "DIGIS-API-ACCESSKEY": api_key
-    }
-
-    response = requests.get(base_url, headers=headers)
-    if response.status_code == 200:
-        data = json.loads(response.text)['Data'][0]
-
-        # Create a dictionary containing all keys and values from data
-        df_data = {key: data[key] for key in keys}
-
-        # Convert all values in df_data to lists
-        for key, value in df_data.items():
-            if not isinstance(value, list):
-                df_data[key] = [value]
-
-        # Find the longest list in df_data
-        max_len = max([len(value) for value in df_data.values()])
-
-        # Extend all the lists to the length of the longest list
-        for key, value in df_data.items():
-            if len(value) < max_len:
-                df_data[key] = value + [None] * (max_len - len(value))
-
-        # Create the DataFrame
-        df = pd.DataFrame(df_data)
-
-        return df
-
-    else:
-        print(f"Error fetching data for sample ID {sampling_feature_id}, Status code: {response.status_code}")
-        return None
-
-
 
 def check_api_connection():
     endpoint = "ping"
@@ -147,6 +122,7 @@ filtered_samples_combined = get_filtered_samples(
 
 print(filtered_samples_combined, "\n")
 
+
 # Extract SamplingFeatureIDs
 if "Data" in filtered_samples_combined and filtered_samples_combined["Data"]:
     sampling_feature_ids = [sample["SampleID"] for sample in filtered_samples_combined["Data"]]
@@ -154,43 +130,40 @@ if "Data" in filtered_samples_combined and filtered_samples_combined["Data"]:
 else:
     print("No data found or unexpected data structure", "\n")
 
+
 # Create an empty DataFrame to store all measurement data
 measurement_data = pd.DataFrame()
 
-# Initialize the progress bar
-progress_bar = tqdm(
-    total=len(sampling_feature_ids),
-    desc="Processing",
-    unit="sample",
-    dynamic_ncols=True,
-    leave=True,
-    colour="#00507d",
-)
 
-# Redirect the standard output to suppress intermediate prints
-with io.StringIO() as buf, redirect_stdout(buf):
+# Erstelle die Progressbar
+progress = IntProgress(value=0, min=0, max=len(sampling_feature_ids), layout=Layout(width="auto"))
+progress_label = Label('Starting...')
+progress_box = HBox([progress, progress_label])
+display(progress_box)
 
-    # Iterate over the list of SamplingFeatureIDs
-    for sampling_feature_id in sampling_feature_ids:
-        print(f"Fetching measurement data for SamplingFeatureID: {sampling_feature_id}")
+# Iterate over the list of SamplingFeatureIDs
+for sampling_feature_id in sampling_feature_ids:
+    print(f"Fetching measurement data for SamplingFeatureID: {sampling_feature_id}")
 
-        # Get the measurement data for the current SamplingFeatureID
-        df = get_measurement_data(api_key, sampling_feature_id)
+    # Get the measurement data for the current SamplingFeatureID
+    df = get_measurement_data(api_key, sampling_feature_id)
 
-        # Check if the dataframe is not empty and not None
-        if df is not None and not df.empty:
-            # Append the dataframe to the measurement_data DataFrame
-            measurement_data = measurement_data.append(df, ignore_index=True)
-        elif df is None:
-            print(f"Error occurred while fetching data for SamplingFeatureID {sampling_feature_id}")
-        else:
-            print(f"No measurement data found for SamplingFeatureID {sampling_feature_id}")
+    # Check if the dataframe is not empty and not None
+    if df is not None and not df.empty:
+        # Append the dataframe to the measurement_data DataFrame
+        measurement_data = measurement_data.append(df, ignore_index=True)
 
-        # Update the progress bar for each completed step
-        progress_bar.update(1)
+        # Print the dataframe
+        print(f"Data for SamplingFeatureID {sampling_feature_id}:\n", df)
+    elif df is None:
+        print(f"Error occurred while fetching data for SamplingFeatureID {sampling_feature_id}")
+    else:
+        print(f"No measurement data found for SamplingFeatureID {sampling_feature_id}")
 
-# Close the progress bar after the loop
-progress_bar.close()
+    # Aktualisiere die Progressbar und das Label
+    progress.value += 1
+    progress_label.value = f"Processing: {sampling_feature_id} ({progress.value}/{progress.max})"
+
 
 
 # Save the combined measurement_data DataFrame
