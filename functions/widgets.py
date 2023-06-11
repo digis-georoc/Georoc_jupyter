@@ -158,3 +158,10 @@ key_widget = widgets.SelectMultiple(
     options=keys,
     description='Keys:',
 )
+
+show_selection = display(limit_widget, offset_widget, location1_widget, location2_widget, location3_widget, 
+        setting_widget, latitude_widget, longitude_widget, rocktype_widget, rockclass_widget, 
+        mineral_widget, material_widget, inclusiontype_widget, sampletech_widget, element_widget, 
+        elementtype_widget, value_widget, title_widget, publicationyear_widget, doi_widget, 
+        firstname_widget, lastname_widget, agemin_widget, agemax_widget, geoage_widget, 
+        geoageprefix_widget, lab_widget)
