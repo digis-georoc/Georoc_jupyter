@@ -1,5 +1,6 @@
 from ipywidgets import widgets
 from ipywidgets import Layout
+from ipywidgets import Button
 
 # Erstellen Sie ein Text-Widget
 api_key_widget = widgets.Text(
@@ -8,6 +9,14 @@ api_key_widget = widgets.Text(
     disabled=False,
     layout=Layout(width="auto")
 )
+
+update_button = Button(description='Confirm API Key')
+
+def update_headers(button):
+    api_key = api_key_widget.value
+    headers.update({"DIGIS-API-ACCESSKEY": api_key})
+
+update_button.on_click(update_headers)
 
 limit_widget = widgets.Text(placeholder='Enter a value for Limit', description='Limit:')
 offset_widget = widgets.Text(placeholder='Enter a value for Offset', description='Offset:')
