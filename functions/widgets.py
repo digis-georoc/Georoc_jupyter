@@ -10,13 +10,13 @@ api_key_widget = widgets.Text(
     layout=Layout(width="auto")
 )
 
-update_button = Button(description='Confirm API Key')
+def on_button_clicked(b):
+    headers["DIGIS-API-ACCESSKEY"] = api_key_widget.value
+    print("API Key updated!")
 
-def update_headers(button):
-    api_key = api_key_widget.value
-    headers.update({"DIGIS-API-ACCESSKEY": api_key})
-
-update_button.on_click(update_headers)
+# Erstellen Sie einen Button, um den API-Schlüssel zu bestätigen
+confirm_button = Button(description="Confirm API Key")
+confirm_button.on_click(on_button_clicked)
 
 limit_widget = widgets.Text(placeholder='Enter a value for Limit', description='Limit:')
 offset_widget = widgets.Text(placeholder='Enter a value for Offset', description='Offset:')
