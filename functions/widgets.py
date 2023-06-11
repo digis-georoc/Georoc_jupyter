@@ -153,8 +153,8 @@ keys = ['Sample_Num', 'unique_id', 'Batches', 'References', 'SampleName', 'Locat
         'Institution', 'Item_Name', 'Item_Group', 'Standard_Names', 'Standard_Values', 'Values', 'Units']
 
 
-# Erstellen Sie das SelectMultiple-Widget für die Schlüsselauswahl
-key_widget = widgets.SelectMultiple(
-    options=keys,
-    description='Keys:',
-)
+# Erstellen Sie eine Checkbox für jeden Schlüssel
+checkboxes = [widgets.Checkbox(value=False, description=key) for key in keys]
+
+# Erstellen Sie eine Box, um alle Checkboxen zu halten
+checkboxes_box = widgets.VBox(children=checkboxes)
