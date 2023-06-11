@@ -1,6 +1,9 @@
 import requests
 import json
 import pandas as pd
+from functions.config import *
+
+
 
 def api_query(endpoint, params=None):
     response = requests.get(f"{base_url}{endpoint}", headers=headers, params=params)
