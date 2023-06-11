@@ -1,4 +1,5 @@
 from ipywidgets import widgets
+from ipywidgets import Layout
 
 # Erstellen Sie ein Text-Widget
 api_key_widget = widgets.Text(
