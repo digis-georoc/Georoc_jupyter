@@ -9,7 +9,7 @@ def api_query(endpoint, params=None):
     response = requests.get(f"{base_url}{endpoint}", headers=headers, params=params)
     if response.status_code == 200:
         data = json.loads(response.text)
-        print("\n", f"API query successful for endpoint:{endpoint}", "\n")
+        print(f"API query successful for endpoint:{endpoint}", "\n")
         return data
     else:
         print(f"API query error for endpoint: {endpoint}, Statuscode:{response.status_code}", "\n")
@@ -29,20 +29,31 @@ def check_api_connection():
 def get_filtered_samples(
         limit=None,
         offset=None,
-        setting=None,
         location1=None,
         location2=None,
         location3=None,
+        setting=None,
+        latitude=None,
+        longitude=None,
         rocktype=None,
         rockclass=None,
         mineral=None,
-        element=None,
-        elementtype=None,
         material=None,
         inclusiontype=None,
         sampletech=None,
-        elements=None,
-        value=None
+        element=None,
+        elementtype=None,
+        value=None,
+        title=None,
+        publicationyear=None,
+        doi=None,
+        firstname=None,
+        lastname=None,
+        agemin=None,
+        agemax=None,
+        geoage=None,
+        geoageprefix=None,
+        lab=None
 ):
     endpoint = "queries/samples"
 

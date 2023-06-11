@@ -1,4 +1,5 @@
 from ipywidgets import widgets
+from functions.widgets import *
 
 limit = limit_widget.value
 offset = offset_widget.value
