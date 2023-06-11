@@ -9,140 +9,42 @@ api_key_widget = widgets.Text(
     layout=Layout(width="auto")
 )
 
-limit_widget = widgets.Text(
-    placeholder='Enter a value for Limit',
-    description='Limit:'
-)
+widget_list = [
+    widgets.Text(placeholder='Enter a value for Limit', description='Limit:'),
+    widgets.Text(placeholder='Enter a value for Offset', description='Offset:'),
+    widgets.Text(placeholder='Enter a value for Location1', description='Location1:'),
+    widgets.Text(placeholder='Enter a value for Location2', description='Location2:'),
+    widgets.Text(placeholder='Enter a value for Location3', description='Location3:'),
+    widgets.Text(placeholder='Enter a value for Setting', description='Setting:'),
+    widgets.Text(placeholder='Enter a value for Latitude', description='Latitude:'),
+    widgets.Text(placeholder='Enter a value for Longitude', description='Longitude:'),
+    widgets.Text(placeholder='Enter a value for Rocktype', description='Rocktype:'),
+    widgets.Text(placeholder='Enter a value for Rockclass', description='Rockclass:'),
+    widgets.Text(placeholder='Enter a value for Mineral', description='Mineral:'),
+    widgets.Text(placeholder='Enter a value for Material', description='Material:'),
+    widgets.Text(placeholder='Enter a value for Inclusiontype', description='Inclusiontype:'),
+    widgets.Text(placeholder='Enter a value for SampleTech', description='SampleTech:'),
+    widgets.Text(placeholder='Enter a value for Element', description='Element:'),
+    widgets.Text(placeholder='Enter a value for Elementtype', description='Elementtype:'),
+    widgets.Text(placeholder='Enter a value for Value', description='Value:'),
+    widgets.Text(placeholder='Enter a value for Title', description='Title:'),
+    widgets.Text(placeholder='Enter a value for Year of Publication', description='Year of Publication:'),
+    widgets.Text(placeholder='Enter a value for DOI', description='DOI:'),
+    widgets.Text(placeholder='Enter a value for First Name', description='First Name:'),
+    widgets.Text(placeholder='Enter a value for Lastname', description='Lastname:'),
+    widgets.Text(placeholder='Enter a value for Age Minimum', description='Age Minimum:'),
+    widgets.Text(placeholder='Enter a value for Age Maximum', description='Age Maximum:'),
+    widgets.Text(placeholder='Enter a value for Geo Age', description='Geo Age:'),
+    widgets.Text(placeholder='Enter a value for Geo Age Prefix', description='Geo Age Prefix:'),
+    widgets.Text(placeholder='Enter a value for Lab', description='Lab:')
+]
 
-offset_widget = widgets.Text(
-    placeholder='Enter a value for Offset',
-    description='Offset:'
-)
+# Erstellen Sie ein Layout für die GridBox
+grid_layout = widgets.Layout(grid_template_columns="repeat(3, 300px)")  # 2 Spalten, jede 300px breit
 
-location1_widget = widgets.Text(
-    placeholder='Enter a value for Location1',
-    description='Location1:'
-)
+# Erstellen Sie eine GridBox, um alle Widgets zu halten
+grid2 = widgets.GridBox(children=widget_list, layout=grid_layout)
 
-location2_widget = widgets.Text(
-    placeholder='Enter a value for Location2',
-    description='Location2:'
-)
-
-location3_widget = widgets.Text(
-    placeholder='Enter a value for Location3',
-    description='Location3:'
-)
-
-setting_widget = widgets.Text(
-    placeholder='Enter a value for Setting',
-    description='Setting:'
-)
-
-latitude_widget = widgets.Text(
-    placeholder='Enter a value for Latitude',
-    description='Latitude:'
-)
-
-longitude_widget = widgets.Text(
-    placeholder='Enter a value for Longitude',
-    description='Longitude:'
-)
-
-rocktype_widget = widgets.Text(
-    placeholder='Enter a value for Rocktype',
-    description='Rocktype:'
-)
-
-rockclass_widget = widgets.Text(
-    placeholder='Enter a value for Rockclass',
-    description='Rockclass:'
-)
-
-mineral_widget = widgets.Text(
-    placeholder='Enter a value for Mineral',
-    description='Mineral:'
-)
-
-material_widget = widgets.Text(
-    placeholder='Enter a value for Material',
-    description='Material:'
-)
-
-inclusiontype_widget = widgets.Text(
-    placeholder='Enter a value for Inclusiontype',
-    description='Inclusiontype:'
-)
-
-sampletech_widget = widgets.Text(
-    placeholder='Enter a value for SampleTech',
-    description='SampleTech:'
-)
-
-element_widget = widgets.Text(
-    placeholder='Enter a value for Element',
-    description='Element:'
-)
-
-elementtype_widget = widgets.Text(
-    placeholder='Enter a value for Elementtype',
-    description='Elementtype:'
-)
-
-value_widget = widgets.Text(
-    placeholder='Enter a value for Value',
-    description='Value:'
-)
-
-title_widget = widgets.Text(
-    placeholder='Enter a value for Title',
-    description='Title:'
-)
-
-publicationyear_widget = widgets.Text(
-    placeholder='Enter a value for Year of Publication',
-    description='Year of Publication:'
-)
-
-doi_widget = widgets.Text(
-    placeholder='Enter a value for DOI',
-    description='DOI:'
-)
-
-firstname_widget = widgets.Text(
-    placeholder='Enter a value for First Name',
-    description='First Name:'
-)
-
-lastname_widget = widgets.Text(
-    placeholder='Enter a value for Lastname',
-    description='Lastname:'
-)
-
-agemin_widget = widgets.Text(
-    placeholder='Enter a value for Age Minimum',
-    description='Age Minimum:'
-)
-
-agemax_widget = widgets.Text(
-    placeholder='Enter a value for Age Maximum',
-    description='Age Maximum:'
-)
-
-geoage_widget = widgets.Text(
-    placeholder='Enter a value for Geo Age',
-    description='Geo Age:'
-)
-
-geoageprefix_widget = widgets.Text(
-    placeholder='Enter a value for Geo Age Prefix',
-    description='Geo Age Prefix:'
-)
-
-lab_widget = widgets.Text(
-    placeholder='Enter a value for Lab',
-    description='Lab:'
-)
 
 
 # Specify the desired keys
