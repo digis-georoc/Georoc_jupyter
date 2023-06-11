@@ -22,15 +22,11 @@ For feedback, questions and further information contact [Digis-Info](mailto:digi
 
 The Jupyter Notebook created are specifically designed to illustrate the features of GEOROC 2.0. They focus on data access via the API, followed by suggested workflows for data formatting, cleansing, resampling, and presentation. They were first used to test the API and ensure its functionality.
 
-The Jupyter Notebook are divided into two specific categories:
+The first part focuses on demonstrating the process of sending API requests. It illustrates how users can query the API and retrieve data from the GEOROC database. The examples covered in this notebook encompass a wide range of API requests, showcasing the usability and accessibility of the new API.
 
-1. The first part is focused on demonstrating how to send API requests. It illustrates how users can query the API and retrieve data from the GEOROC database. The examples in this notebook cover a wide range of API requests and demonstrate the usability and accessibility of the new API.
+The second part revolves around general techniques for data formatting. It explains how the retrieved data from the GEOROC database can be prepared, cleansed, and formatted for further analysis. The methods presented in this notebook are universally applicable and can be employed for all types of data retrieved from the database.
 
-2. The second part focuses on general methods for data cleansing. It illustrates how data retrieved from the API can be cleaned, preprocessed, and formatted for further analysis. The methods presented in this notebook are universal and can be applied to all types of data retrieved from the GEOROC database.
-
-3. The third part focuses on data visualization and includes a detailed reconstruction of a geochemical publication. This notebook illustrates how the cleaned and formatted data can be visualized to provide valuable insight and interpretation. It illustrates various methods of data visualization and how they can be used to present results in a clear and understandable manner.
-
-Each of these parts includes detailed tutorials and explanations to help users understand the functionality of the API and the processes of data cleaning and visualization.
+The third part concentrates on data visualization and includes a detailed reconstruction of a geochemical publication. This notebook exemplifies how the formatted and cleansed data can be visualized to provide valuable insights and interpretations. It showcases various methods of data visualization and their effective utilization in presenting results in a clear and understandable manner.
 
 ***
 
