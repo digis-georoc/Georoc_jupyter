@@ -46,5 +46,5 @@ def get_selected_keys(checkboxes):
     selected_keys = []
     for checkbox in checkboxes:
         if checkbox.value:
-            selected_keys._append(checkbox.description)
+            selected_keys.append(checkbox.description)
     return selected_keys
