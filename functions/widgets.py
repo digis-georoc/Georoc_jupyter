@@ -2,21 +2,6 @@ from ipywidgets import widgets
 from ipywidgets import Layout
 from ipywidgets import Button
 
-# Erstellen Sie ein Text-Widget
-api_key_widget = widgets.Text(
-    placeholder='Geben Sie Ihren API-Schlüssel ein',
-    description='API Key:',
-    disabled=False,
-    layout=Layout(width="auto")
-)
-
-def on_button_clicked(b):
-    headers["DIGIS-API-ACCESSKEY"] = api_key_widget.value
-    print("API Key updated!")
-
-# Erstellen Sie einen Button, um den API-Schlüssel zu bestätigen
-confirm_button = Button(description="Confirm API Key")
-confirm_button.on_click(on_button_clicked)
 
 limit_widget = widgets.Text(placeholder='Enter a value for Limit', description='Limit:')
 offset_widget = widgets.Text(placeholder='Enter a value for Offset', description='Offset:')
@@ -57,7 +42,7 @@ widget_list = [
 ]
 
 # Erstellen Sie ein Layout für die GridBox
-grid_layout = widgets.Layout(grid_template_columns="repeat(3, 300px)")  # 3 Spalten, jede 300px breit
+grid_layout = widgets.Layout(grid_template_columns="repeat(3, 300px)")
 
 # Erstellen Sie eine GridBox, um alle Widgets zu halten
 grid2 = widgets.GridBox(children=widget_list, layout=grid_layout)
