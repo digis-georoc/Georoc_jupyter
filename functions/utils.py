@@ -2,6 +2,7 @@ import requests
 import json
 import pandas as pd
 from functions.widgets import *
+from functions.georoc_api import *
 
 
 def get_measurement_data(api_key, sampling_feature_id, selected_keys):
