@@ -39,4 +39,12 @@ def get_measurement_data(api_key, sampling_feature_id):
     else:
         print(f"Error fetching data for sample ID {sampling_feature_id}, Status code: {response.status_code}")
         return None
-    
+
+
+
+def get_selected_keys(checkboxes):
+    selected_keys = []
+    for checkbox in checkboxes:
+        if checkbox.value:
+            selected_keys._append(checkbox.description)
+    return selected_keys

@@ -60,7 +60,7 @@ keys = ['Sample_Num', 'unique_id', 'Batches', 'References', 'SampleName', 'Locat
 checkboxes = [widgets.Checkbox(value=False, description=key) for key in keys]
 
 # Erstellen Sie ein Layout für die GridBox
-grid_layout = widgets.Layout(grid_template_columns="repeat(3, 300px)")  # 3 Spalten, jede 300px breit
+grid_layout = widgets.Layout(grid_template_columns="repeat(3, 300px)")
 
 # Erstellen Sie eine GridBox, um alle Checkboxen zu halten
 grid = widgets.GridBox(children=checkboxes, layout=grid_layout)
