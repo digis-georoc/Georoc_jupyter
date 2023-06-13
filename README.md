@@ -35,7 +35,6 @@ Launch our notebook on Binder by clicking the button [![Binder](https://mybinder
 
 ###### Hint: To utilize our notebooks, please note that it is necessary to have an API key from GEOROC. If you do not have an API key, we recommend visiting the official homepage to request one.
 
-
 ***
 
 ### Social:
@@ -43,3 +42,27 @@ Launch our notebook on Binder by clicking the button [![Binder](https://mybinder
 [Visit our Website](https://georoc.eu/)
 
 ![Twitter URL](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Ftwitter.com%2FDIGISgeo)
+
+***
+
+### References
+
+[1] Garcia, M. O., Muenow, D. W., Aggrey, K. E., and O'Neil, J. R. (1989), Major element, volatile, and stable isotope geochemistry of Hawaiian submarine tholeiitic glasses, J. Geophys. Res., 94( B8), 10525– 10538, doi:10.1029/JB094iB08p10525. 
+
+[2] requests - Python HTTP library for humans. [Online]. Available: https://requests.readthedocs.io
+
+[3] json - This is part of Python's standard library. Python Software Foundation. Python Language Reference, version 3.x. Available at http://www.python.org
+
+[4] pandas - Wes McKinney. Data Structures for Statistical Computing in Python, Proceedings of the 9th Python in Science Conference, 51-56 (2010) [Online]. Available: https://pandas.pydata.org
+
+[5] geopandas - GeoPandas developers. GeoPandas: Python tools for geographic data [Online]. Available: https://geopandas.org
+
+[6] seaborn - Michael Waskom, Olga Botvinnik, Drew O’Kane, Paul Hobson, Joel Ostblom, Saulius Lukauskas, ... & Tom Augspurger. (2020, October 4). mwaskom/seaborn: v0.11.0 (Version v0.11.0). Zenodo. http://doi.org/10.5281/zenodo.4019147
+
+[7] matplotlib - John D. Hunter. Matplotlib: A 2D Graphics Environment, Computing in Science & Engineering, 9, 90-95 (2007), DOI:10.1109/MCSE.2007.55
+
+[8] contextily - Darribas, D., Arribas-Bel, D., Nshan, B., & van den Bosch, M. (2020). contextily: context geo-tiles in Python. Journal of Open Source Software, 5(55), 2302. https://doi.org/10.21105/joss.02302
+
+[9] adjustText - Ilya Flyamer. (2016). adjustText: A small library for automatically adjusting text position in matplotlib plots to minimize overlaps. Zenodo. http://doi.org/10.5281/zenodo.4922517
+
+[10] ipywidgets - Project Jupyter. (2017). ipywidgets: Interactive HTML widgets for Jupyter notebooks and the IPython kernel. Zenodo. https://doi.org/10.5281/zenodo.836874
