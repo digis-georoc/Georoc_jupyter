@@ -20,13 +20,11 @@ For feedback, questions and further information contact [Digis-Info](mailto:digi
 
 # Jupyter-Notebook
 
-The Jupyter Notebook created are specifically designed to illustrate the features of GEOROC 2.0. They focus on data access via the API, followed by suggested workflows for data formatting, cleansing, resampling, and presentation. They were first used to test the API and ensure its functionality.
+We have created a Jupyter notebook specifically designed to illustrate the features of GEOROC 2.0. Our main focus is on data access via the API, after which we follow suggested workflows for data formatting, cleaning, resampling, and presentation.
 
-The first part focuses on demonstrating the process of sending API requests. It illustrates how users can query the API and retrieve data from the GEOROC database. The examples covered in this notebook encompass a wide range of API requests, showcasing the usability and accessibility of the new API.
-
-The second part revolves around general techniques for data formatting. It explains how the retrieved data from the GEOROC database can be prepared, cleansed, and formatted for further analysis. The methods presented in this notebook are universally applicable and can be employed for all types of data retrieved from the database.
-
-The third part concentrates on data visualization and includes a detailed reconstruction of a geochemical publication. This notebook exemplifies how the formatted and cleansed data can be visualized to provide valuable insights and interpretations. It showcases various methods of data visualization and their effective utilization in presenting results in a clear and understandable manner.
+The first part of the notebook illustrates the process of sending API requests. It shows how users can query the API and retrieve data from the GEOROC database. The examples covered in this notebook cover API requests and demonstrate the usability and accessibility of the new API. 
+The second part is all about general data formatting techniques. It explains how to prepare, clean, and format data retrieved from the GEOROC database for further analysis.
+The third and final part focuses on data visualization and includes a detailed reconstruction of a geochemical publication. More specifically, we reconstructed the publication "Major Element, Volatile and stable Isotope geochemistry of Hawaiian submarine tholeiitic glasses" by Garcia et al. (1989). This notebook illustrates how the formatted and cleaned data can be visualized to provide valuable insight and interpretation. It demonstrates various methods of data visualization and their effective use to present results in a clear and understandable manner.
 
 ***
 
@@ -42,13 +40,6 @@ Launch our notebook on Binder by clicking the button [![Binder](https://mybinder
 
 ### Social:
 
-[Visit our Website](https://georoc.mpch-mainz.gwdg.de/georoc/)
+[Visit our Website](https://georoc.eu/)
 
 ![Twitter URL](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Ftwitter.com%2FDIGISgeo)
-
-***
-
-### Authors:
-
-* **Dr. Marthe Klöcking** - *DIGIS Project Co-ordinator* - [Dr. Marthe Klöcking](https://www.uni-goettingen.de/en/644510.html)
-* **Timm M. Wirtz** - *Student in geoscience* - [Timm Wirtz](https://github.com/tmwProjects/)
