@@ -42,33 +42,6 @@ def get_measurement_data(api_key, sampling_feature_id, selected_keys):
         return None
 
 
-# Iterate over the list of SamplingFeatureIDs
-for index, sampling_feature_id in enumerate(sampling_feature_ids):
-    print(f"Fetching measurement data for SamplingFeatureID: {sampling_feature_id}")
-
-    # Get the selected keys from the checkboxes
-    selected_keys = [checkboxes[i].description for i in range(len(checkboxes)) if checkboxes[i].value]
-
-    # Get the measurement data for the current SamplingFeatureID using the selected keys
-    df = get_measurement_data(my_app.api.api_key, sampling_feature_id, selected_keys)
-
-    # Check if the dataframe is not empty and not None
-    if df is not None and not df.empty:
-        # Append the dataframe to the measurement_data DataFrame
-        measurement_data = measurement_data._append(df, ignore_index=True)
-
-        # Print the dataframe
-        print(f"Data for SamplingFeatureID {sampling_feature_id}:\n", df)
-    elif df is None:
-        print(f"Error occurred while fetching data for SamplingFeatureID {sampling_feature_id}")
-    else:
-        print(f"No measurement data found for SamplingFeatureID {sampling_feature_id}")
-
-    # Update the progress bar
-    progress_bar.value = index + 1
-
-
-
 def get_selected_keys(checkboxes):
     selected_keys = []
     for checkbox in checkboxes:
