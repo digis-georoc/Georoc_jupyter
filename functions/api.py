@@ -2,7 +2,7 @@ from functions.georoc_api import GeoRocAPI
 from ipywidgets import widgets
 
 
-class MyApp:
+class ApiKey:
     def __init__(self):
         self.api = None
         self.api_key_text = widgets.Password(description='API Key:')
