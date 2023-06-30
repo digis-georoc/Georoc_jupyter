@@ -13,7 +13,7 @@ The GEOROC Database was established at the Max Planck Institute for Chemistry in
 
 As part of the DIGIS project, a new API interface has been created for the GEOROC database, allowing easy access to its contents with simple programming skills. Users can now query the database and retrieve data using the new API, making it more accessible and useful for researchers and other interested parties. This notebook demonstrates the basic capabilities of GEOROC data access via the new DIGIS API. 
 
-For feedback, questions and further information contact [Digis-Info](mailto:digis-info@uni-goettingen.de) directly.
+For feedback, questions and further information contact [DIGIS-Info](mailto:digis-info@uni-goettingen.de) directly.
 
 </span>
 
@@ -41,7 +41,7 @@ The third and final part focuses on data visualization and includes a detailed r
 
 <span style="text-align: justify; display: block; max-width: 850px; margin: 0 auto;">
 
-Launch our notebook on Binder by clicking the button [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/tmwProjects/Georoc_jupyter/HEAD?labpath=Georoc_Notebook.ipynb) **OR** [Download our Notebook](https://github.com/tmwProjects/Georoc_jupyter/blob/main/DIGIS_GeoRoc.ipynb) and use it on your local machine or in your browser. If you are not familiar with Jupyter, you can visit the [official website](https://jupyter.org/) for more information.
+Launch our notebook on Binder by clicking the button [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/tmwProjects/Georoc_jupyter/HEAD?labpath=Georoc_Notebook.ipynb) **OR** [Download our Notebook](https://github.com/tmwProjects/Georoc_jupyter/blob/main/Georoc_Notebook.ipynb) and use it on your local machine or in your browser. If you are not familiar with Jupyter, you can visit the [official website](https://jupyter.org/) for more information.
 
 
 ###### Hint: To utilize our notebook, please note that it is necessary to have an API key from GEOROC. If you do not have an API key, we recommend visiting the official homepage to request one.
@@ -62,7 +62,7 @@ Launch our notebook on Binder by clicking the button [![Binder](https://mybinder
 
 <span style="text-align: justify; display: block; max-width: 850px; margin: 0 auto;">
 
-[1] **Garcia, M. O., Muenow, D. W., Aggrey, K. E., and O'Neil, J. R. (1989)**, Major element, volatile, and stable isotope geochemistry of Hawaiian submarine tholeiitic glasses, J. Geophys. Res., 94( B8), 10525– 10538, doi:10.1029/JB094iB08p10525. 
+[1] **Garcia, M. O., Muenow, D. W., Aggrey, K. E., and O'Neil, J. R. (1989)**, Major element, volatile, and stable isotope geochemistry of Hawaiian submarine tholeiitic glasses, J. Geophys. Res., 94(B8), 10525– 10538, http://doi.org/10.1029/JB094iB08p10525. 
 
 [2] **requests** - Python HTTP library for humans. [Online]. Available: https://requests.readthedocs.io
 
