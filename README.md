@@ -91,9 +91,9 @@ methods of data visualization and their effective use to present results in a cl
 
 <img src="grafics/BINDER_JUPYTER_QR.png" style="height:315px" align="center"/> <br><br>
 
-###### Hint: To utilize our notebook, please note that it is necessary to have an API key from GEOROC. If you do not have an API key, we recommend visiting the [official GEOROC website](https://georoc.eu/) to request one.
+###### Hint: Please note that an API key from GEOROC is required to use our notebook. If you would like to request one, contact [DIGIS-Info](mailto:digis-info@uni-goettingen.de) directly.
 
-[Back to table of contents](#table-of-contents)#
+[Back to table of contents](#table-of-contents)
 
 
 
@@ -141,7 +141,7 @@ file list to go to them.
 
 * You should now be able to use the downloaded Jupyter Notebook locally on your computer. 
 
-###### Hint: To utilize our notebook, please note that it is necessary to have an API key from GEOROC. If you do not have an API key, we recommend visiting the [official GEOROC website](https://georoc.eu/) to request one.
+###### Hint: Please note that an API key from GEOROC is required to use our notebook. If you would like to request one, contact [DIGIS-Info](mailto:digis-info@uni-goettingen.de) directly.
 
 [Back to table of contents](#table-of-contents)
 
@@ -234,7 +234,7 @@ git clone https://github.com/tmwProjects/Georoc_jupyter.git
 
 If you are considering installing Git, you can visit the [official Git website](https://git-scm.com/) for more information.
 
-###### Hint: To utilize our notebook, please note that it is necessary to have an API key from GEOROC. If you do not have an API key, we recommend visiting the [official GEOROC website](https://georoc.eu/) to request one.
+###### Hint: Please note that an API key from GEOROC is required to use our notebook. If you would like to request one, contact [DIGIS-Info](mailto:digis-info@uni-goettingen.de) directly.
 
 [Back to table of contents](#table-of-contents)
 
@@ -287,6 +287,8 @@ please [email](mailto:digis-info@uni-goettingen.de) us directly or visit our uni
 [Back to table of contents](#table-of-contents)
 
 ### License
+
+#### Attribution-ShareAlike 4.0 International
 
 With this licence, you may use, modify and share the work as long as you credit the original author. However, you may 
 not use it for commercial purposes, i.e. you may not make money from it. And if you make changes and share the new work, 

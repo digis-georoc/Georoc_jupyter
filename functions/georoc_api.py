@@ -7,7 +7,7 @@ class GeoRocAPI:
     def __init__(self, api_key):
         GeoRocAPI.api_key = api_key
         print("API Key:", GeoRocAPI.api_key)
-        self.base_url = "https://api-test.georoc.eu/api/v1/"
+        self.base_url = "https://api-dev.georoc.eu/api/v1/"
         self.headers = {
             "accept": "application/json",
             "DIGIS-API-ACCESSKEY": GeoRocAPI.api_key
