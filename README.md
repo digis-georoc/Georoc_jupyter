@@ -85,7 +85,7 @@ methods of data visualization and their effective use to present results in a cl
 
 ##### Launch our notebook on Binder in your browser by clicking the button:
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/tmwProjects/Georoc_jupyter/HEAD?labpath=Georoc_Notebook.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/digis-georoc/Georoc_jupyter/HEAD?labpath=Georoc_Notebook.ipynb)
 
 ##### or scan the QR-Code to run our Notebook over Binder on your smartphone:
 
