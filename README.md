@@ -4,8 +4,8 @@
 [cc-by-nc-sa-shield]: https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-blue.svg
 
 [![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
-![GitHub commit activity](https://img.shields.io/github/commit-activity/w/tmwProjects/Georoc_jupyter) 
-![GitHub Repo stars](https://img.shields.io/github/stars/tmwProjects/Georoc_jupyter?style=social)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/m/digis-georoc/Georoc_jupyter) 
+![GitHub Repo stars](https://img.shields.io/github/stars/digis-georoc/Georoc_jupyter?style=social)
 
 ***
 
@@ -127,7 +127,7 @@ In this case, a new tab will open in your web browser displaying the Jupyter int
 **Step 3**: Download and open the Jupyter Notebook.
 
 * Click on the following link to go to the page containing the Jupyter Notebook you wish to download: 
-[Download our Notebook](https://github.com/tmwProjects/Georoc_jupyter/blob/main/Georoc_Notebook.ipynb)
+[Download our Notebook](https://github.com/digis-georoc/Georoc_jupyter/blob/main/Georoc_Notebook.ipynb)
 
 * Once on the page, find the "Download raw file" button at the top right of Github and click on it.
 
@@ -185,7 +185,7 @@ In both cases, a new tab will open in your web browser displaying the Jupyter in
 **Step 3**: Download and open the Jupyter Notebook.
 
 * Click on the following link to go to the page containing the Jupyter Notebook you wish to download: 
-[Download our Notebook](https://github.com/tmwProjects/Georoc_jupyter/blob/main/Georoc_Notebook.ipynb)
+[Download our Notebook](https://github.com/digis-georoc/Georoc_jupyter/blob/main/Georoc_Notebook.ipynb)
 
 * Once on the page, find the "Download raw file" button at the top right of Github and click on it.
 
@@ -229,7 +229,7 @@ cd /to/your/path
 Now the whole command to clone our repository:
 
 ```Bash
-git clone https://github.com/tmwProjects/Georoc_jupyter.git
+git clone https://github.com/digis-georoc/Georoc_jupyter.git
 ```
 
 If you are considering installing Git, you can visit the [official Git website](https://git-scm.com/) for more information.
