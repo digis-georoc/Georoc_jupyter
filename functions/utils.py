@@ -8,7 +8,7 @@ import ipywidgets as widgets
 
 
 def get_measurement_data(api_key, sampling_feature_id, selected_keys):
-    base_url = f"https://api-dev.georoc.eu/api/v1/queries/fulldata/{sampling_feature_id}"
+    base_url = f"https://api-test.georoc.eu/api/v1/queries/fulldata"
     headers = {
         "accept": "application/json",
         "DIGIS-API-ACCESSKEY": api_key
